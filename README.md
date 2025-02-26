@@ -5,6 +5,10 @@ On 15 April 2024 <https://www.movieboxpro.app/> was victim to a user-enumeration
 
 Due to this, I decided to take a slightly closer look at the applications security, which lead to the discovery of the attack described below:
 
+## Demo 🎥
+
+https://github.com/user-attachments/assets/26fb9b3d-80a1-4073-8177-8c865f80c288
+
 ## Overview :spiral_notepad:
 Generating session-cookies locally by exploiting the platforms weak implementation of session cookies and formulating attacks based on this access.
 
@@ -101,10 +105,3 @@ Another session cookie!
 We now not only had access to every single user account and all their personal info but could also arbitrarily delete their accounts instantly...
 ## Conclusion :gift:
 MBP has now implemented a more secure JWT (JSON web token) based approach based on my advice, and I have been paid out for responsibly disclosing this exploit-chain as apart of their bug bounty programme.
-
-## Demo 🎥
-A friend kindly let me use his account as a demo for the attack:
-
-
-https://github.com/user-attachments/assets/26fb9b3d-80a1-4073-8177-8c865f80c288
-
